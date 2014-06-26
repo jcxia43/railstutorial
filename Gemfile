@@ -37,6 +37,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'draper', '~> 1.3'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
@@ -48,3 +49,8 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+#
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
